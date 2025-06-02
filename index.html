@@ -73,11 +73,9 @@
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">MD-Grasp: A Mamba-Based Efficient Robotic Grasp Detection Network for Complex Backgrounds</h1>
             <div class="is-size-5 publication-authors">
-            </div>
-
             <div class="is-size-5 publication-authors">
               
-            </div>
+
 
             <div class="column has-text-centered">
               <div class="publication-links">
@@ -85,18 +83,18 @@
                 <span class="link-block">
                   <a href=""
                     class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
+                    <!-- <span class="icon">
                       <i class="fas fa-file-pdf"></i>
-                    </span>
+                    </span> -->
                     <span>Paper</span>
                   </a>
                 </span>
                 <!-- Video Link. -->
                 <span class="link-block">
                   <a href="" class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
+                    <!-- <span class="icon">
                       <i class="fab fa-youtube"></i>
-                    </span>
+                    </span> -->
                     <span>Video</span>
                   </a>
                 </span>
@@ -104,9 +102,9 @@
                 <span class="link-block">
                   <a href=""
                     class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
+                    <!-- <span class="icon">
                       <i class="fab fa-github"></i>
-                    </span>
+                    </span> -->
                     <span>Code</span>
                   </a>
                 </span>
@@ -145,54 +143,35 @@ This advancement represents a significant step forward in complex environment gr
 
 
 
-  <!-- <section class="hero teaser">
-    <div class="container is-max-desktop">
-      <div class="hero-body">
-        <img src="static\images\fig_robot.png" />
-
-        <h2 class="subtitle has-text-centered">
-          The robotic grasping experimental scenario.
-        </h2>
-      </div>
-    </div>
-  </section> -->
-
-
   <section class="section">
     <div class="container is-max-desktop">
-        <div class="container is-max-desktop">
-          <div class="columns is-centered">
-            <div class="column is-full-width">
-              
-              
-              <h2 class="title is-3">Network Architecture</h2>
-              <div class="hero-body">
-                <img src="static\images\md.png" />
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Network Architecture</h2>
+            <div class="hero-body">
+              <img src="static\images\md.png" />
+              <p>
+              Architecture of MD-Grasp. In this model, grasp quality, orientation, and width maps are predicted from the input RGB-D images.
+              </p>
+            </div>
+
+          <h2 style="text-align: center;">Experiment</h2>
+            <h3 style="text-align: center;">Grasp Detection</h3>
+              <div class="content has-text-justified">
                 <p>
-                    Architecture of MD-Grasp. In this model, grasp quality, orientation, and width maps are predicted from the input RGB-D images.
+                  Below are the grasp detection experiments, which predict grasp poses for objects with varying shapes, sizes, colors, and textures. The results are divided into two parts: single-object and multi-object scenarios.
                 </p>
               </div>
+              <img src="static\images\grasp_detection.png" />
 
-              <h2 style="text-align: center;">Experiment</h2>
-                <h3 style="text-align: center;">Grasp Detection</h3>
-
-                <div class="content has-text-justified">
-                  <p>
-                    Below are the grasp detection experiments, which predict grasp poses for objects with varying shapes, sizes, colors, and textures. The results are divided into two parts: single-object and multi-object scenarios.
-                  </p>
-                </div>
-                <img src="static\images\grasp_detection.png" />
-
-
-
-                <h3 style="text-align: center;">UR5e Grasp</h3>
-                <div class="content has-text-justified">
-                  <p>
-                    Here are the grasping experiments conducted on unseen scenes and objects. The left column shows the single-object grasping videos, while the right column presents the multi-object grasping videos.
-                  </p>
-                </div>
+            <h3 style="text-align: center;">UR5e Grasp</h3>
+              <div class="content has-text-justified">
+                <p>
+                  Here are the grasping experiments conducted on unseen scenes and objects. The left column shows the single-object grasping videos, while the right column presents the multi-object grasping videos.
+                </p>
+              </div>
                 
-                <div style="display: flex; justify-content: center; gap: 20px;">
+              <div style="display: flex; justify-content: center; gap: 20px;">
                 <video autoplay controls muted loop playsinline width="400">
                   <source src="static/video_md-grsap/white_single1.mp4" type="video/mp4">
                   Your browser does not support the video tag.
@@ -201,9 +180,9 @@ This advancement represents a significant step forward in complex environment gr
                   <source src="static/video_md-grsap/white_multi1.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
-                </div>
+              </div>
 
-                <div style="display: flex; justify-content: center; gap: 20px;">
+              <div style="display: flex; justify-content: center; gap: 20px;">
                 <video autoplay controls muted loop playsinline width="400">
                   <source src="static/video_md-grsap/cat_single.mp4" type="video/mp4">
                   Your browser does not support the video tag.
@@ -212,9 +191,9 @@ This advancement represents a significant step forward in complex environment gr
                   <source src="static/video_md-grsap/cat_multi.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
-                </div>
+              </div>
 
-                <div style="display: flex; justify-content: center; gap: 20px;">
+              <div style="display: flex; justify-content: center; gap: 20px;">
                 <video autoplay controls muted loop playsinline width="400">
                   <source src="static/video_md-grsap/gray_single.mp4" type="video/mp4">
                   Your browser does not support the video tag.
@@ -223,9 +202,9 @@ This advancement represents a significant step forward in complex environment gr
                   <source src="static/video_md-grsap/gray_multi.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
-                </div>
+              </div>
 
-                <div style="display: flex; justify-content: center; gap: 20px;">
+              <div style="display: flex; justify-content: center; gap: 20px;">
                 <video autoplay controls muted loop playsinline width="400">
                   <source src="static/video_md-grsap/green_single.mp4" type="video/mp4">
                   Your browser does not support the video tag.
@@ -234,9 +213,9 @@ This advancement represents a significant step forward in complex environment gr
                   <source src="static/video_md-grsap/green_multi.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
-                </div>
+              </div>
 
-                <div style="display: flex; justify-content: center; gap: 20px;">
+              <div style="display: flex; justify-content: center; gap: 20px;">
                 <video autoplay controls muted loop playsinline width="400">
                   <source src="static/video_md-grsap/red_single.mp4" type="video/mp4">
                   Your browser does not support the video tag.
@@ -245,22 +224,14 @@ This advancement represents a significant step forward in complex environment gr
                   <source src="static/video_md-grsap/red_multi.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
-                </div>
+              </div>
 
-
-            </div>
-          </div>
         </div>
       </div>
-  </section>
-
-
-
-  <section class="section">
-    <div class="container is-max-desktop">
-      
     </div>
   </section>
+
+
 
 
   <footer class="footer">
