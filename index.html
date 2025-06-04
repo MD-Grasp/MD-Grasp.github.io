@@ -125,14 +125,15 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              In recent years, robotic technology has experienced significant advancement across industrial and residential applications, yet grasp detection in complex environments presents ongoing challenges, particularly in domestic settings. 
-The presence of varied surface textures and object overlap introduces substantial complexity to the task, with current solutions primarily effective only in controlled environments.
-To enhance performance in real-world scenarios, we introduce MD-Grasp, an innovative pixel-level grasp detection network leveraging the Mamba architecture. 
-Our system integrates Mamba modules for comprehensive feature analysis with efficient Dense Block components for detailed local processing. 
-The network demonstrates superior performance, achieving 98.7\% and 95.5\% detection accuracy on the Cornell and Jacquard datasets respectively, exceeding current benchmarks. 
-Additionally, when tested on the CBRGD dataset featuring multiple objects and complex backgrounds, MD-Grasp outperforms existing solutions with enhanced disturbance resistance. 
-Extensive testing in residential environments confirms the system's reliability and adaptability. 
-This advancement represents a significant step forward in complex environment grasp detection, establishing new possibilities in robotic vision and manipulation capabilities.
+              Existing industrial and household robots encounter challenges in adapting to intricate scenarios and manipulating diverse objects, leading to insufficient adaptability.
+Furthermore, current research in grasp detection is limited to simplified background environments, hindering the ability to meet the demands of complex real-world applications.
+To address these challenges, we propose a multi-object background-adaptive Grasp detection network named MD-Grasp, which is based on Mamba & attention fusion block and Dense block.
+MD-Grasp integrates Dense Block for the extraction of local features, effectively accentuating target objects situated in the foreground. 
+On the other hand, the Mamba & Attention Fusion Block enhances global feature modeling, thereby highlighting critical regions within the foreground.
+Extensive experiments demonstrate that the proposed MD-Grasp exhibits significant advantages when confronted with complex and variable objects. 
+In single-object grasping, the MD-Grasp scheme achieved accuracy rates of 98.7% and 97.7% on the Cornell dataset, and 95.5% on the Jacquard dataset, which is comparable to the SOTA method. 
+In multi-object grasping, the MD-Grasp scheme improved the average accuracy rate by 1% to 3% on the CBRGD dataset compared to the baseline. 
+Experiments conducted in real household environments validated that MD-Grasp can maintain high grasping accuracy.
             </p>
           </div>
         </div>
